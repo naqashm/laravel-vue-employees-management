@@ -26,7 +26,7 @@ Laravel Employees Management project main steps:
 	$table->string('first_name');
 	$table->string('middle_name')->nullable();
 	$table->foriegnId('department_id')->constrained();  (add foriegn key for relationships between tables)
-6). php artisan migrate:fresh (this will create columns in tables)
+6). php artisan migrate (this will create columns in tables)
 	*Note: If you got error like: Failed to open referenced table..
 			then rename that migration file to load at last
 7). Modify views as your desire: resources/views/register.blade.php then modify respective controllers and models for newly added columns: Http/Controllers/*.php, Http/Models/*.php
